@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".p4.Lat1IntentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ini halaman utama Activity Lat1 Intent"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+    <EditText
+        android:id="@+id/edit_text_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button_submit_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent with extra" />
+
+</LinearLayout>

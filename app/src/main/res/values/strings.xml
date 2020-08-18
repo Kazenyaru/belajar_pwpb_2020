@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Belajar PWPB</string>
+    <string name="latgrid_label">Latihan GridLayout</string>
+    <string name="belajar_pwpb_label">Belajar PWPB</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kanzen.belajarpwpb">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".p4.P4IndexActivity"></activity>
+        <activity android:name=".p3.P3IndexActivity" />
+        <activity android:name=".p2.P2IndexActivity" />
+        <activity android:name=".p1.P1IndexActivity" />
+        <activity android:name=".p3.LatT3Activity" />
+        <activity android:name=".p3.LatT2Activity" />
+        <activity android:name=".p3.LatT1Activity" />
+        <activity android:name=".p2.SoalLR2Activity" />
+        <activity android:name=".p2.SoalLR1Activity" />
+        <activity android:name=".p1.LatLR3Activity" />
+        <activity android:name=".p1.LatLR2Activity" />
+        <activity android:name=".p1.LatLR1Activity" />
+        <activity android:name=".p4.limaintent.LimaIntentMoveWithObjectActivity" />
+        <activity android:name=".p4.limaintent.LimaIntentMoveWithDataActivity" />
+        <activity android:name=".p4.limaintent.LimaIntentMoveForResultActivity" />
+        <activity android:name=".p4.limaintent.LimaIntentMoveActivity" />
+        <activity android:name=".p4.limaintent.LimaIntentMainActivity" />
+        <activity android:name=".p4.Lat2IntentActivity" />
+        <activity android:name=".p4.Lat1IntentActivity" />
+        <activity android:name=".p4.LatConstrActivity" />
+        <activity
+            android:name=".p4.SoalGridActivity"
+            android:label="@string/latgrid_label" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/belajar_pwpb_label">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

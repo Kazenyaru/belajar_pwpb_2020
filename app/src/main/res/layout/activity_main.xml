@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Hello World!"
+        android:textSize="56dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/p1_button"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Latihan Linear Relative"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/p2_button"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Soal Linear Relative"
+            app:layout_constraintLeft_toLeftOf="@+id/p1_button"
+            app:layout_constraintRight_toRightOf="@+id/p1_button"
+            app:layout_constraintTop_toBottomOf="@+id/p1_button" />
+
+        <Button
+            android:id="@+id/p3_button"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Latihan Table"
+            app:layout_constraintLeft_toLeftOf="@+id/p2_button"
+            app:layout_constraintRight_toRightOf="@+id/p2_button"
+            app:layout_constraintTop_toBottomOf="@+id/p2_button" />
+
+        <Button
+            android:id="@+id/p4_button"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Latihan Intent"
+            app:layout_constraintLeft_toLeftOf="@+id/p3_button"
+            app:layout_constraintRight_toRightOf="@+id/p3_button"
+            app:layout_constraintTop_toBottomOf="@+id/p3_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

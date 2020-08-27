@@ -85,6 +85,14 @@ public class LimaIntentMainActivity extends AppCompatActivity implements
 
                 break;
 
+            case R.id.btn_open_browser:
+                String url = "https://smkn4bdg.sch.id";
+                Intent bukabrowser = new Intent(Intent. ACTION_VIEW);
+                bukabrowser.setData(Uri. parse(url));
+                startActivity(bukabrowser);
+
+                break;
+
             case R.id.btn_move_for_result:
                 Intent moveForResultIntent = new Intent(LimaIntentMainActivity.this,
                         LimaIntentMoveForResultActivity.class);

@@ -36,6 +36,12 @@
         android:text="Telepon"
         android:layout_marginBottom="@dimen/activity_vertical_margin"/>
     <Button
+        android:id="@+id/btn_open_browser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browser"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+    <Button
         android:id="@+id/btn_move_for_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -14,7 +14,7 @@ import com.kanzen.belajarpwpb.p4.limaintent.LimaIntentMainActivity;
 public class P4IndexActivity extends AppCompatActivity {
 
     private Button[] b = new Button[4];
-    private Class[] ac = {LatConstrActivity.class, SoalGridActivity.class, Lat1IntentActivity.class, LimaIntentMainActivity.class};
+    private Class[] ac = {SoalGridActivity.class, LatConstrActivity.class, Lat1IntentActivity.class, LimaIntentMainActivity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -16,12 +16,13 @@ import com.kanzen.belajarpwpb.p4.P4IndexActivity;
 import com.kanzen.belajarpwpb.p4.SoalGridActivity;
 import com.kanzen.belajarpwpb.p4.limaintent.LimaIntentMainActivity;
 import com.kanzen.belajarpwpb.p5.P5IndexActivity;
+import com.kanzen.belajarpwpb.p6.P6IndexActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button[] b = new Button[5];
+    private Button[] b = new Button[6];
     private Class[] ac = {P1IndexActivity.class, P2IndexActivity.class, P3IndexActivity.class,
-            P4IndexActivity.class, P5IndexActivity.class};
+            P4IndexActivity.class, P5IndexActivity.class, P6IndexActivity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         b[2] = findViewById(R.id.p3_button);
         b[3] = findViewById(R.id.p4_button);
         b[4] = findViewById(R.id.p5_button);
+        b[5] = findViewById(R.id.p6_button);
 
         for (int i = 0; i < b.length; i++) {
             final int finalI = i;

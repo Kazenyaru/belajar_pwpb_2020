@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".p6.LatInputActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        style="@android:style/TextAppearance.Material.Headline"
+        android:padding="16dp"
+        android:text="Menjumlahkan 2 Bilangan" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/kalkulasi_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/bil1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:inputType="number"
+            android:hint="Masukan Bilangan 1"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"/>
+
+        <EditText
+            android:id="@+id/bil2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/bil1"
+            app:layout_constraintLeft_toLeftOf="@id/bil1"
+            app:layout_constraintRight_toRightOf="@id/bil1"
+            android:inputType="number"
+            android:hint="Masukan Bilangan 2"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"/>
+
+        <Button
+            android:id="@+id/kalkulasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/bil2"
+            app:layout_constraintLeft_toLeftOf="@id/bil2"
+            app:layout_constraintRight_toRightOf="@id/bil2"
+            android:text="Kalkulasi"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/hasil_penjumlahan_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/kalkulasi_container"
+        android:textAlignment="center"
+        style="@android:style/TextAppearance.Material.Large"
+        android:text="Hasil Penjumlahan" />
+
+    <EditText
+        android:id="@+id/hasil_penjumlahan_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/hasil_penjumlahan_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:editable="false"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

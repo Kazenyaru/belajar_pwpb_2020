@@ -9,19 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".p6.LatCustomLVActivity"></activity>
+        <activity android:name=".p6.P6IndexActivity" />
+        <activity android:name=".p6.LatInputActivity" />
         <activity
             android:name=".p6.ListViewActivity"
-            android:label="@string/title_activity_list_view">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <!--
-               Set to true if your app is Standalone, that is, it does not require the handheld
-               app to run.
-        -->
+            android:label="@string/title_activity_list_view" />
         <activity android:name=".p5.P5IndexActivity" />
         <activity
             android:name=".p5.lat_fragment.LatFragmentActivity"
@@ -58,7 +51,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
